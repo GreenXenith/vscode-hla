@@ -1,0 +1,38 @@
+{
+    "name": "hla",
+    "displayName": "HLA",
+    "description": "Language support for Randall Hyde's High Level Assembly.",
+    "icon": "icon.png",
+    "version": "1.0.0",
+    "author": {
+        "name": "GreenXenith"
+    },
+    "publisher": "GreenXenith",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GreenXenith/vscode-hla.git"
+    },
+    "bugs": {
+        "url": "https://github.com/GreenXenith/vscode-hla/issues"
+    },
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hla",
+            "aliases": ["High Level Assembly", "hla"],
+            "extensions": [".hla", ".hhf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hla",
+            "scopeName": "source.hla",
+            "path": "./syntaxes/hla.tmLanguage.json"
+        }]
+    }
+}
